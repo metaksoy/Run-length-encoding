@@ -1,0 +1,20 @@
+fun main() {
+    val strUser = readLine()!!.lowercase()
+    var iMatch : Int = 0
+    var chrMatch : Char = strUser[0]
+
+    for (char in strUser+1) {
+
+        if (char == chrMatch) {
+
+            iMatch += 1
+        }else {
+            print("$iMatch$chrMatch")
+            chrMatch = char
+            iMatch = 1
+
+        }
+
+
+    }
+}
